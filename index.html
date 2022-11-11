@@ -2,37 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Gen</title>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href=".//assets/css/style.css" />
 </head>
 
 <body>
-    <div class="">
+    <div class="wrapper">
         <header>
             <h1>Password Generator</h1>
         </header>
-        <div class="box">
-            <div class="box-header">
+        <div class="card">
+            <div class="card-header">
+                <h2>Generate a Password</h2>
             </div>
-            <div class="box-body">
-            <div1><label for="freeform">Password will consit of 12 Characters</label>
-                <br>
-
-                <textarea id="freeform" name="freeform" rows="5" cols="50">
-Output shown here..
-</textarea>
-            </div1>
+            <div class="card-body">
+                <textarea readonly id="password" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
             </div>
-            <div class="box-footer">
+            <div class="card-footer">
                 <button id="generate" class="btn">Generate Password</button>
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
