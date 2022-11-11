@@ -1,8 +1,8 @@
 # Password Generator Project 
-Password Gen Challenge 
-# Password Homepage 
+Password Generator Challenge 
+# Password Page 
 
-![The Top of the Webpage](./assets/images/README%SH.png)
+![The Top of the Webpage](./assets/images/READMESH.png)
 
 ## Description 
 
