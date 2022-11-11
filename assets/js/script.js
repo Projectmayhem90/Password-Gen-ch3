@@ -127,9 +127,9 @@ function userInput() {
 }
 
 // Personal user function 
-function randomize(y) {
-    var randomNumber = Math.floor(Math.random() * y.length);
-    var randomResult = y[randomNumber];
+function randomize(x) {
+    var randomNumber = Math.floor(Math.random() * x.length);
+    var randomResult = x[randomNumber];
     return randomResult;
 }
 
