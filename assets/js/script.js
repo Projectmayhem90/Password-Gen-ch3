@@ -1,15 +1,15 @@
 // All possible characters
-var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "[", "{", "]", "]", ";", ":", "'", '"', "\\", "|", ",", "<", ".", ">", "/", "?", "`", "~"];
+var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 // Generate Element 
 var generateBtn = document.querySelector("#generate");
 
 // Personal function 
 function userInput() {
-    var length = window.prompt("How many characters long should the password be? \nPlease choose a number between 12 and 200.");
+    var length = window.prompt("How long should the password be? \nPlease choose a number between 12 and 200.");
 
     if (length < 12 || length > 200 || isNaN(length)) {
         window.alert("Mistake! Please choose a number between 12 and 200.")
@@ -20,7 +20,7 @@ function userInput() {
         var specialChoice = window.confirm("Do you want to include special characters? \nPress OK for Yes \nPress Cancel for No");
 
         if (uppercaseChoice === false && lowercaseChoice === false && numbersChoice === false && specialChoice === false) {
-            window.alert("Error! Please select at least one character type.")
+            window.alert("MISTAKE! Choose at least one character type.")
         }
     }
 
@@ -37,9 +37,9 @@ function userInput() {
 }
 
 // Personal user function 
-function randomize(x) {
-    var randomNumber = Math.floor(Math.random() * x.length);
-    var randomResult = x[randomNumber];
+function randomize(y) {
+    var randomNumber = Math.floor(Math.random() * y.length);
+    var randomResult = y[randomNumber];
     return randomResult;
 }
 
